@@ -1,0 +1,263 @@
+
+/* font-family: 'Noto Sans', sans-serif; */
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Noto Sans'), local('NotoSans'), url(https://fonts.gstatic.com/s/notosans/v9/o-0IIpQlx3QUlC5A4PNr5TRA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(https://fonts.gstatic.com/s/notosans/v9/o-0NIpQlx3QUlC5A4PNjXhFVZNyB.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  body{
+    background-color: lightgray;
+  }
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* header */
+/* header */
+/* header */
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+  
+#header nav{
+    position: absolute; 
+    right: 24px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#header header{
+    width: 100%;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 4;
+}
+
+#logo_top{
+    position: absolute;
+    left: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo_text{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+}
+
+.logo_top{
+    max-width: 100%;
+    height: 32px;
+}
+
+.nav_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px
+}
+
+.nav_button_text{
+    font-size: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(26, 26, 26);
+}
+
+.logo_text_left{
+    font-weight: 700;
+    color: rgb(104, 104, 104);
+}
+
+.logo_text_right{
+    font-weight: normal;
+    color: rgb(161, 161, 161);
+}
+
+@media only screen and (max-width: 780px){
+    /* change to mobile version of nav bar */
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* banner */
+/* banner */
+/* banner */
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+#banner banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    top: 64px;
+    border-bottom: 3px solid orange;
+}
+
+#banner_image_box{
+    width: 60%;
+    margin: 36px 0;
+}
+
+#banner_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 36px;
+    margin-right: 1px;
+}
+
+#banner_first_block{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#banner_second_block{
+    font-size: 22px;
+}
+
+#banner_third_block{
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+    padding: 8px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.banner_image{
+    width: 100%;
+    max-height: 100%;
+}
+
+.banner_text{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+@media only screen and (max-width: 920px){
+    #banner_image_box{
+        width: 100%;
+        
+    }
+
+    #banner_text{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* module 1 */
+/* module 1 */
+/* module 1 */
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+#module_1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: 64px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+#module_1_left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 24px;
+    top: 32px;
+    margin-right: 24px;
+}
+
+#module_1_right{
+    width: 40%;
+    margin-top: 20px;
+}
+
+.module_1_right_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.module_1_right_image{
+    width: 35%;
+    height: auto;
+}
+
+#module_1_left_image{
+    width: 100%;
+}
+
+.module_1_text{
+    text-align: left;
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 5px;
+    color: black;
+}
+
+.module_1_left_image{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* module 2 */
+/* module 2 */
+/* module 2 */
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+
+#module_2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 64px;
+}
